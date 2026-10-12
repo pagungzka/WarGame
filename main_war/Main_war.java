@@ -37,7 +37,7 @@ public class Main_war {
                         + "Faça um palpite entre 1 e 100. Que a sorte esteja contigo.");
                 passou = meuOraculo.loadLevel01(meuGuerreiro);
                 if (!passou) {
-                    meuGuerreiro.perderVidas(); // o level 1 nao tira vida sozinho
+                    meuOraculo.perderVida(meuGuerreiro);
                 }
             } else if (fase == 2) {
                 passou = meuOraculo.loadLevel02(meuGuerreiro);
